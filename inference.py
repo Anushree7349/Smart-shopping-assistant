@@ -58,10 +58,7 @@ def run():
 
         total_reward += reward.value
 
-        print(
-            f"[STEP] step={step} action={action} reward={reward.value:.2f} done={done}",
-            flush=True,
-        )
+        print(f"[STEP] step={step} action={action} reward={reward.value:.2f} done={done}", flush=True)
 
         history.append((product.name, action, reward.value))
         step += 1
@@ -69,10 +66,7 @@ def run():
         if done:
             break
 
-    print(
-    f"[END] success=true steps={step} score={total_reward:.2f}",
-    flush=True,
-)
+    print(f"[END] success=true steps={step} score={total_reward:.2f}", flush=True)
 
 
 # ---------------- MAIN ---------------- #
